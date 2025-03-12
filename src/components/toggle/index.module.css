@@ -1,0 +1,43 @@
+.cart-back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    pointer-events: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.cart-back.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.toggle {
+    background: #252836;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    z-index: 101;
+    overflow-y: auto;
+    transition: .5s;
+    display: flex;
+    width: 500px;
+    padding: 30px 30px 70px;
+}
+
+.toggle.active {
+    transform: translateX(0);
+}
+
+@media(max-width: 570px) {
+    .toggle {
+        width: 100%;
+        padding: 15px 15px 30px;
+    }
+}

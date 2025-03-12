@@ -1,0 +1,13 @@
+
+.content-body {
+    row-gap: 30px;
+    justify-content: space-around;
+}
+.loader{
+    width: 50%;
+}
+@media(max-width: 768px){
+    .loader{
+        width: 80%;
+    }
+}

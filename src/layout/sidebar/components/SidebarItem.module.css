@@ -1,0 +1,200 @@
+@media(min-width: 768px) {
+    .item button:hover {
+        background-color: #252836;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .item button:hover .icon {
+        background-color: #EA7C69;
+        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+    }
+
+    .item button:hover svg {
+        fill: #fff;
+    }
+}
+
+.item {
+    flex: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.item button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: .3s;
+    position: relative;
+    transition: .3s;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.item button.active {
+    background-color: #252836;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.badge {
+    position: absolute;
+    top: 52%;
+    left: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #EA7C69;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.item button .top-curve,
+.item button .bottom-curve {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    background-color: #252836;
+    opacity: 0;
+}
+
+.item button .top-curve {
+    top: -30%;
+}
+
+.item button .bottom-curve {
+    bottom: -30%;
+}
+
+.item button:hover .top-curve,
+.item button:hover .bottom-curve,
+.item button.active .top-curve,
+.item button.active .bottom-curve {
+    opacity: 1;
+}
+
+.item button .top-curve::after,
+.item button .bottom-curve::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transition: .3s;
+    background-color: #1F1D2B;
+}
+
+.item button:hover .top-curve::after,
+.item button.active .top-curve::after {
+    border-bottom-right-radius: 12px;
+}
+
+.item button:hover .bottom-curve::after,
+.item button.active .bottom-curve::after {
+    border-top-right-radius: 12px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 59px;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.item button.active .icon {
+    background-color: #EA7C69;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+}
+
+.item button svg {
+    fill: #EA7C69;
+    width: 24px;
+    height: 24px;
+    transition: .3s;
+}
+
+.item button.active svg {
+    fill: #fff;
+}
+
+
+.badge {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media(max-width: 1120px) {
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .item {
+        overflow: unset;
+        padding: 0;
+    }
+
+    .item button {
+        padding: 15px;
+    }
+
+
+    .item button:hover,
+    .item button.active {
+        border-radius: 12px;
+    }
+
+    .item button .top-curve,
+    .item button .bottom-curve {
+        display: none;
+    }
+
+    .item button svg {
+        width: 15px;
+        height: 15px;
+    }
+}

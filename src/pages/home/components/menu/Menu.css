@@ -1,0 +1,14 @@
+.menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+@media(max-width: 510px){
+    .menu-list{
+        gap: 30px;
+        overflow-x: auto;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+}

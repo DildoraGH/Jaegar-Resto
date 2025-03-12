@@ -1,0 +1,96 @@
+.payment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 1px solid #393C49;
+}
+
+.header h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABBBC2;
+}
+
+.body {
+    padding-top: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.payment-methods div {
+    position: relative;
+    cursor: pointer;
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 101px;
+    padding: 10px 0;
+}
+
+.payment-methods div h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ABBBC2;
+    margin-bottom: 0;
+}
+
+.payment-methods div span {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #EA7C69;
+}
+
+.payment-methods div:nth-child(1):hover svg path,
+.payment-methods div:nth-child(3):hover svg path {
+    fill: white;
+}
+
+.payment-methods div:nth-child(2):hover svg path {
+    stroke: white;
+}
+
+.payment-methods div:hover span {
+    color: white;
+}

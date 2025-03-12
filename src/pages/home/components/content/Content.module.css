@@ -1,0 +1,28 @@
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content-header h5 {
+    font-weight: 600;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.content-header select {
+    appearance: none;
+    max-width: 185px;
+    width: 100%;
+    background: #1F1D2B;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 40px;
+}

@@ -1,0 +1,87 @@
+.form {
+    margin-bottom: 20px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.div-group{
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #393C49;
+    margin-bottom: 15px;
+}
+
+.type {
+    display: flex;
+    gap: 30px;
+}
+
+.type div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.type select {
+    background: #1F1D2B;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #E0E6E9;
+}
+
+.type option {
+    background: #2D303E;
+    color: white;
+}
+
+.type label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.table-num input {
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #E0E6E9;
+}
+
+.btns {
+    display: flex;
+    gap: 50px;
+}
+
+.btns button {
+    flex: 1;
+}
+
+.cancel {
+    border: 1px solid #EA7C69;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #EA7C69;
+}
+.cancel:hover{
+    background-color: #EA7C69;
+    color: white;
+}
+.inputs-wrapper{
+    margin-bottom: 50px;
+}

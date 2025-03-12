@@ -1,0 +1,46 @@
+.settings {
+    width: 100%;
+}
+
+.back {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back button {
+    border: none;
+    background: none;
+}
+
+.back span {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.settings-content{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.settings-content button {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #1F1D2B;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 30px;
+}
+.settings-content button:hover{
+    background-color: rgba(234, 124, 105, 0.26);
+}
+.settings-content span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
